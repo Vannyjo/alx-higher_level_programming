@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-def magic_calculation(a, b):
+def magic_calculation(i, j):
     """Match bytecode provided"""
     from magic_calculation_102 import add, sub
 
     if i < j:
         k = add(i, j)
-        for f in range(4, 6):
+        for i in range(4, 6):
             k = add(k, f)
         return (k)
 
