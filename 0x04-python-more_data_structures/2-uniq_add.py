@@ -9,4 +9,3 @@ def uniq_add(my_list=[]):
             unique_values.add(num)
 
     return total
-
