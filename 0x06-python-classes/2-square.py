@@ -24,13 +24,10 @@ class Square:
             ValueError: If `size` is less than 0.
         """
 
-        self._size = size
-
         if not isinstance(size, int):
 
             raise TypeError("size must be an integer")
 
         if size < 0:
-            raise ValueError set the private instance attribute '_size'("size must be >= 0")
-
-
+            raise ValueError("size must be >= 0")
+        self._size = size
