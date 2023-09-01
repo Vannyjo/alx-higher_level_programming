@@ -6,17 +6,14 @@ class Square:
         """ set the private instance attribute '_size'"""
         self._size = size
 
-        try
 
         """ First, check if 'size' is an integer"""
         if not isinstance(size, int):
 
-            except TypeError:
-                print("size must be an integer")
+            raise TypeError("size must be an integer")
 
          """ Next, check if 'size' is less than 0"""
         if size < 0:
-            except ValueError:
-                print("size must be >= 0")
+            raise ValueError set the private instance attribute '_size'("size must be >= 0")
 
 
