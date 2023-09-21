@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Contains a  class base to serve as base for other classes"""
+"""This module contains a class to serve as base for other classes"""
 
 
 import csv
@@ -14,7 +14,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ initializing class method"""
+        """ """
         if id is not None:
             self.id = id
         else:
@@ -33,7 +33,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Saves JSON representation to file"""
+        """Save JSON representation to file"""
         file_name = cls.__name__ + ".json"
         with open(file_name, "w") as jsonfile:
             if list_objs is None:
@@ -154,10 +154,10 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draws Rectangles and Squares using the turtle module.
+        """Draw Rectangles and Squares using the turtle module.
         Args:
-            list_rectangles (list): Will list the Rectangle objects to draw.
-            list_squares (list): Will list the Square objects to draw.
+            list_rectangles (list): A list of Rectangle objects to draw.
+            list_squares (list): A list of Square objects to draw.
         """
         turt = turtle.Turtle()
         turt.screen.bgcolor("#b7312c")
