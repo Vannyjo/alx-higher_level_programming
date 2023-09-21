@@ -12,7 +12,7 @@ import inspect
 
 class test_base(unittest.TestCase):
     '''
-        Base testing
+        Testing base
     '''
     def test_id_none(self):
         '''
